@@ -14,16 +14,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/post_list_item"
-        tools:itemCount="5"/>
+        tools:itemCount="2"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.904"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875" />
+        app:layout_constraintVertical_bias="0.875"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/fab" />
 </androidx.constraintlayout.widget.ConstraintLayout>

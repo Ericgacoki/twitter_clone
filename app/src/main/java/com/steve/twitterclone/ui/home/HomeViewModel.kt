@@ -1,13 +1,13 @@
 package com.steve.twitterclone.ui.home
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.steve.twitterclone.model.Data
+import com.steve.twitterclone.model.TweetItem
 
 class HomeViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+    var scrollPosition: Int = 0
+    fun getData(): ArrayList<TweetItem> {
+        return Data.getTweets()
     }
-    val text: LiveData<String> = _text
 }

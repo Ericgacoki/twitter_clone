@@ -38,6 +38,5 @@ class RvAdapter(val tweets: ArrayList<TweetItem>) : RecyclerView.Adapter<RvAdapt
 
     override fun getItemCount(): Int {
         return tweets.size
-
     }
 }
